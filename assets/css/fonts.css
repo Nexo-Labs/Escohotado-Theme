@@ -74,3 +74,10 @@
     font-weight: 700;
     src: local(""), url("../fonts/lora-v25-latin-700italic.woff2") format("woff2"), url("../fonts/lora-v25-latin-700italic.woff") format("woff");
 }
+
+@font-face {
+    font-family: "Escohotado";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url("../fonts/Escohotado-Regular.ttf") format("truetype");
+}

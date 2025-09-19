@@ -1,0 +1,37 @@
+/* Custom styles for Escohotado Theme */
+
+/* Alternative blockquote style with Escohotado font */
+.kg-blockquote-alt {
+    font-family: "Escohotado", serif !important;
+    font-style: normal !important;
+    font-size: 1.8rem !important;
+    line-height: 1.6 !important;
+    color: var(--color-primary-text) !important;
+    margin: 2rem 0 !important;
+    padding: 2rem !important;
+    background: rgba(var(--ghost-accent-color-rgb), 0.05) !important;
+    border-left: 4px solid var(--ghost-accent-color) !important;
+    border-radius: 0 8px 8px 0 !important;
+}
+
+.kg-blockquote-alt p {
+    margin: 0 !important;
+    font-family: inherit !important;
+    font-style: normal !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+.kg-blockquote-alt cite {
+    font-family: var(--font-sans) !important;
+    font-size: 1.4rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    color: var(--color-secondary-text) !important;
+    margin-top: 1rem !important;
+    display: block !important;
+}
+
+.kg-blockquote-alt cite::before {
+    content: "— " !important;
+}
