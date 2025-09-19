@@ -1,0 +1,64 @@
+/* Custom styles for Escohotado Theme */
+
+/* Alternative blockquote style with Escohotado font */
+.kg-blockquote-alt {
+    font-family: "Escohotado" !important;
+    font-style: normal !important;
+    font-size: 2.6rem !important;
+    line-height: 1.6 !important;
+    color: var(--color-primary-text) !important;
+    margin: 2rem 0 !important;
+    padding: 2rem !important;
+    background: rgba(var(--ghost-accent-color-rgb), 0.05) !important;
+    border-left: 4px solid var(--ghost-accent-color) !important;
+    border-radius: 0 8px 8px 0 !important;
+}
+.gh-home-logo {
+    font-family: "Escohotado" !important;
+    font-size: 4rem !important;
+}
+.kg-blockquote-alt p {
+    margin: 0 !important;
+    font-family: inherit !important;
+    font-style: normal !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+.kg-blockquote-alt cite {
+    font-family: var(--font-sans) !important;
+    font-size: 2.6rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    color: var(--color-secondary-text) !important;
+    margin-top: 1rem !important;
+    display: block !important;
+    text-align: right !important;
+}
+
+.kg-blockquote-alt span.escota-quote {
+    display: block !important;
+    width: 162px !important;
+    height: 40px !important;
+    margin: 1rem 0 0 auto !important;
+    background-image: url('../images/signature.svg') !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+}
+
+/* Custom logo style with Escohotado font */
+.gh-head-logo {
+    font-family: "Escohotado", serif !important;
+    font-size: 4rem !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+
+/* Custom portal avatar styles */
+.gh-portal-avatar img {
+    background: white !important;
+    background-color: white !important;
+    border-radius: 50% !important;
+    padding: 2px !important;
+}

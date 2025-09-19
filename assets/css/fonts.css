@@ -74,3 +74,17 @@
     font-weight: 700;
     src: local(""), url("../fonts/lora-v25-latin-700italic.woff2") format("woff2"), url("../fonts/lora-v25-latin-700italic.woff") format("woff");
 }
+
+@font-face {
+    font-family: "Escohotado";
+    src: local(""),
+         url('https://escohotado.es/fonts/Escohotado-Regular.ttf') format('truetype'),
+         url('https://testing.escohotado.es/fonts/Escohotado-Regular.ttf') format('truetype'),
+         url('https://foro.escohotado.es/assets/uploads/fonts/escohotado-regular.ttf') format('truetype'),
+         url('https://foro.escohotado.es/assets/uploads/fonts/escohotado-regular.woff') format('woff'),
+         url('https://foro.escohotado.es/assets/uploads/fonts/escohotado-regular.woff2') format('woff2'),
+         url('https://github.com/Nexo-Labs/Escohotado-Theme/raw/refs/heads/main/assets/fonts/Escohotado-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
