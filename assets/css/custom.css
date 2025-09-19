@@ -1,0 +1,195 @@
+/* Custom styles for Escohotado Theme */
+
+/* Alternative blockquote style with Escohotado font */
+.kg-blockquote-alt {
+    font-family: "Escohotado" !important;
+    font-style: normal !important;
+    font-size: 2.6rem !important;
+    line-height: 1.6 !important;
+    color: var(--color-primary-text) !important;
+    margin: 2rem 0 !important;
+    padding: 2rem !important;
+    background: rgba(var(--ghost-accent-color-rgb), 0.05) !important;
+    border-left: 4px solid var(--ghost-accent-color) !important;
+    border-radius: 0 8px 8px 0 !important;
+}
+.gh-home-logo {
+    font-family: "Escohotado" !important;
+    font-size: 4rem !important;
+}
+.kg-blockquote-alt p {
+    margin: 0 !important;
+    font-family: inherit !important;
+    font-style: normal !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+.kg-blockquote-alt cite {
+    font-family: var(--font-sans) !important;
+    font-size: 2.6rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    color: var(--color-secondary-text) !important;
+    margin-top: 1rem !important;
+    display: block !important;
+    text-align: right !important;
+}
+
+.kg-blockquote-alt span.escota-quote {
+    display: block !important;
+    width: 162px !important;
+    height: 40px !important;
+    margin: 1rem 0 0 auto !important;
+    background-image: url('../images/signature.svg') !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+}
+
+/* Custom logo style with Escohotado font */
+.gh-head-logo {
+    font-family: "Escohotado", serif !important;
+    font-size: 4rem !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+
+/* Custom portal avatar styles */
+.gh-portal-avatar img {
+    background: white !important;
+    background-color: white !important;
+    border-radius: 50% !important;
+    padding: 2px !important;
+}
+
+/* Navigation dropdown menus */
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-dropdown-toggle svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: transform 0.2s ease;
+}
+
+.nav-dropdown.active .nav-dropdown-toggle svg {
+    transform: rotate(180deg);
+}
+
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+    z-index: 1000;
+    min-width: 320px;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-dropdown.active .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav-dropdown-section {
+    border-bottom: none;
+    margin-bottom: 0;
+    flex: 1;
+    min-width: 120px;
+}
+
+.nav-dropdown-section:last-child {
+    margin-bottom: 0;
+}
+
+.nav-section-title {
+    display: block;
+    padding: 0.5rem 0 0.5rem 0;
+    color: #999999 !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.nav-section-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-section-items li {
+    border-bottom: none;
+}
+
+.nav-section-items a {
+    display: block;
+    padding: 0.6rem 0;
+    color: #15171a !important;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: all 0.15s ease;
+}
+
+.nav-section-items a:hover {
+    background-color: var(--ghost-accent-color) !important;
+    color: #ffffff !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Force dropdown visibility */
+.gh-head .nav-dropdown-menu .nav-section-title {
+    color: #999999 !important;
+}
+
+.gh-head .nav-dropdown-menu .nav-section-items a {
+    color: #15171a !important;
+}
+
+.gh-head .nav-dropdown-menu .nav-section-items a:hover {
+    background-color: var(--ghost-accent-color) !important;
+    color: #ffffff !important;
+}
+
+/* Responsive dropdown */
+@media (max-width: 768px) {
+    .nav-dropdown-menu {
+        min-width: 280px;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-dropdown-section {
+        flex: none;
+    }
+    
+    .nav-section-items a {
+        padding: 0.5rem 0;
+        font-size: 1.3rem;
+    }
+}

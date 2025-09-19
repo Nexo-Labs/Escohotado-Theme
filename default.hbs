@@ -29,29 +29,56 @@
                             {{/if}}
                         </a>
                     </div>
-                    <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
-                    <button class="gh-burger" aria-label="Toggle menu"></button>
+                    <button class="gh-search gh-icon-btn" aria-label="Buscar en este sitio" data-ghost-search>{{> "icons/search"}}</button>
+                    <button class="gh-burger" aria-label="Alternar menú"></button>
                 </div>
 
                 <nav class="gh-head-menu">
+                    <!-- Menú desplegable Categorías -->
+                    <ul class="nav">
+                        <li class="nav-dropdown">
+                            <a href="#" class="nav-dropdown-toggle">
+                                Publicaciones
+                                {{> "icons/chevron-down"}}
+                            </a>
+                            <ul class="nav-dropdown-menu">
+                                <li class="nav-dropdown-section">
+                                    <span class="nav-section-title">Por Tipo</span>
+                                    <ul class="nav-section-items">
+                                        <li><a href="/tag/articulos/">Artículos</a></li>
+                                        <li><a href="/tag/audios/">Audios</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-dropdown-section">
+                                    <span class="nav-section-title">Por Tema</span>
+                                    <ul class="nav-section-items">
+                                        <li><a href="/tag/politica/">Política</a></li>
+                                        <li><a href="/tag/drogas/">Drogas</a></li>
+                                        <li><a href="/tag/filosofia/">Filosofía</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
                     {{navigation}}
                 </nav>
 
                 <div class="gh-head-actions">
                     {{#unless @site.members_enabled}}
-                        <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
+                        <button class="gh-search gh-icon-btn" aria-label="Buscar en este sitio" data-ghost-search>{{> "icons/search"}}</button>
                     {{else}}
-                        <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
+                        <button class="gh-search gh-icon-btn" aria-label="Buscar en este sitio" data-ghost-search>{{> "icons/search"}}</button>
                         <div class="gh-head-members">
                             {{#unless @member}}
                                 {{#unless @site.members_invite_only}}
-                                    <a class="gh-head-link" href="#/portal/signin" data-portal="signin">Sign in</a>
-                                    <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Subscribe</a>
+                                    <a class="gh-head-link" href="#/portal/signin" data-portal="signin">Iniciar sesión</a>
+                                    <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Suscribirse</a>
                                 {{else}}
-                                    <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signin" data-portal="signin">Sign in</a>
+                                    <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signin" data-portal="signin">Iniciar sesión</a>
                                 {{/unless}}
                             {{else}}
-                                <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/account" data-portal="account">Account</a>
+                                <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/account" data-portal="account">Cuenta</a>
                             {{/unless}}
                         </div>
                     {{/unless}}
@@ -72,7 +99,7 @@
                     </nav>
                 {{/if}}
                 <div class="gh-powered-by">
-                    <a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a>
+                    <a href="https://ghost.org/" target="_blank" rel="noopener">Desarrollado con Ghost</a>
                 </div>
             </div>
         </footer>
